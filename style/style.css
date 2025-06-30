@@ -40,8 +40,11 @@ ul{
     background-repeat: no-repeat; /*Para que no repita el fondo cuando se hace zoom(se usa de prevencion)*/
     /*background-attachment: fixed; Lo que hace es fijar el fondo*/
     background-position: center; /* Posiciona el fondo en el centro */
-    height: 95vh; /*Usamos vh por un tema de pantallas diferentes de las personas*/
+    height: 100vh; /*Usamos vh por un tema de pantallas diferentes de las personas*/
 } 
+.productos-header{
+    height: 50vh;
+}
 
 .index-header-flex, .contacto-header-flex{
     display: flex; /*Aplica flex*/
@@ -65,10 +68,10 @@ ul{
     /* margin-left: 1rem; */
 }
 
-
 .index-parrafo-header, .index-h1 , .contacto-parrafo-header, .contacto-h1{
     color: rgb(255, 255, 255);
 }
+
 
 .btn-header{
     border: none;
@@ -76,10 +79,14 @@ ul{
     padding: 4px;
     max-width: 30rem;
 }
+.btn-header a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
 
 .productos-header-container{
-    max-width: 70rem;
-    margin: 0 auto;
+    max-width: 40rem;
+    /* margin: 0 auto; */
 }
 
 /* Estilos Mains */
@@ -134,6 +141,7 @@ ul{
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.486)
 }
 
 .ultimos-modelos-container{
@@ -158,7 +166,7 @@ ul{
         flex-direction: row;
         width: 50%;
     }
-    /* .carousel-foto{
-        max-width: 80%;
-    } */
+    .contenedor-inferior-header-sucursales{
+    max-width: 50%;
+}
 }
