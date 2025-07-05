@@ -59,25 +59,20 @@ ul{
 }
 
 .contenedor-inferior-header{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
     gap: 1rem;
-    /* height: 50%; */
     max-width: 30rem; /*Limita el width*/
-    /* margin-left: 1rem; */
 }
 
 .index-parrafo-header, .index-h1 , .contacto-parrafo-header, .contacto-h1{
     color: rgb(255, 255, 255);
 }
 
-
 .btn-header{
     border: none;
     font-weight: 500;
     padding: 4px;
     max-width: 30rem;
+
 }
 .btn-header a{
     text-decoration: none;
@@ -86,7 +81,6 @@ ul{
 
 .productos-header-container{
     max-width: 40rem;
-    /* margin: 0 auto; */
 }
 
 /* Estilos Mains */
@@ -99,10 +93,6 @@ ul{
 
 .iframeMapa{
     width: 90%;
-}
-
-.index-main{
-    margin: 2rem 0;
 }
 
 .ultimos-modelos-titulo{
@@ -167,6 +157,9 @@ ul{
         width: 50%;
     }
     .contenedor-inferior-header-sucursales{
-    max-width: 50%;
-}
+        max-width: 50%;
+    }
+    .btn-header{
+        width: 30rem;
+    }
 }
