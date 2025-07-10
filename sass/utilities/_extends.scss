@@ -1,0 +1,16 @@
+/*Extends*/
+
+
+%flexColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+%paginasHeader{
+    background-image: url(../img/fondo2.png);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    height: 100vh; 
+}

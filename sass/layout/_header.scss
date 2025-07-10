@@ -1,0 +1,53 @@
+/* Estilos Header */
+
+.index-header{
+    background-image: url(../img/fondo2.png);
+    @extend %paginasHeader;
+} 
+.contacto-header{
+    @extend %paginasHeader;
+}
+.sucursales-header{
+    @extend %paginasHeader;
+}
+.productos-header{
+    @extend %paginasHeader;
+    height: 50vh;
+}
+.index-header-flex, .contacto-header-flex{
+    @extend %flexColumn;
+    justify-content: space-between; /*Da un espacio entre ellos(los links de la navbar)*/
+}
+.navegacion-superior ul li a{
+    color: $colorBlanco;
+    text-decoration: none; /*Le saca el subrayado al a*/
+}
+.contenedor-inferior-header{
+    gap: 1rem;
+    max-width: 30rem; /*Limita el width*/
+}
+.index-parrafo-header, .index-h1 , .contacto-parrafo-header, .contacto-h1{
+    color: $colorBlanco;
+}
+.btn-header{
+    font-weight: 500;
+    max-width: 30rem;
+    color: #4d4d4d;
+    padding: 15px 40px;
+    background-color: #e0e0e0;
+    font-family: monospace;
+    border-radius: 50px;
+    border: 2px solid rgb(206,206,206);
+    box-shadow: inset 4px 4px  10px #bcbcbc, inset -4px -4px 10px #ffffff
+}
+.btn-header:hover{
+    box-shadow:inset 2px 2px 10px #bcbcbc, inset -2px -2px 10px #ffffff, inset 2px 2px 10px #bcbcbc, inset -2px -2px 10px #ffffff;
+}
+
+.btn-header a{
+    text-decoration: none;
+    color: $colorNegro;
+}
+.productos-header-container{
+    max-width: 40rem;
+}
