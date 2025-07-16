@@ -96,31 +96,78 @@
           </div>
         </nav>
       </div>
-      <section
-        class="px-3 contenedor-inferior-header h-100 d-flex justify-content-center flex-column mx-3"
-      >
-        <h1 class="contacto-h1">
-          Instrumentos Que Inspiran, Sonidos Que Conectan
-        </h1>
-        <p class="contacto-parrafo-header">
-          En Music House creemos que cada instrumento es una extensión del alma
-          del músico. Por eso, ofrecemos calidad, diseño y sonido para que tu
-          pasión se escuche como nunca antes.
-        </p>
-        <button class="btn-header">Ver instrumentos</button>
+      <section class="contact-wrapper">
+        <div class="info-tienda">
+          <h4>INFORMACIÓN DE LA TIENDA</h4>
+          <div class="info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              Music House<br />
+              57 n°1890<br />
+              La Plata<br />
+              Buenos Aires<br />
+              Argentina
+            </div>
+          </div>
+          <hr />
+          <div class="info-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              Llámenos:<br />
+              <a href="tel:+5491144751234">5491144751234</a>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="info-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              Envíenos un mensaje de correo electrónico:<br />
+              <a href="mailto:alvarezmusica@gmail.com"
+                >MusicHouse@hotmail.com</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="formulario-contacto">
+          <h4>CONTACTE CON NOSOTROS</h4>
+          <form>
+            <label for="asunto">Asunto</label>
+            <select id="asunto" class="imput">
+              <option>Información</option>
+              <option>Soporte</option>
+              <option>Otro</option>
+            </select>
+
+            <label for="email">Dirección de correo electrónico</label>
+            <input type="email" id="email" placeholder="su@email.com" class="input"/>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              id="mensaje"
+              placeholder="¿Cómo podemos ayudarle?"
+              class="input"
+            ></textarea>
+
+            <button type="submit">ENVIAR</button>
+          </form>
+        </div>
+      </section>
+      <section class="novedades">
+        <h2>Recibí todas las novedades y ofertas</h2>
+        <form class="form-novedades">
+          <input class="input-novedades"
+            type="email"
+            placeholder="Su dirección de correo electrónico"
+          />
+          <button type="submit">→</button>
+        </form>
       </section>
     </header>
-    <main>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col">Column</div>
-          <div class="col">Column</div>
-          <div class="col">Column</div>
-        </div>
-      </div>
-    </main>
-    <footer class="footer">
-      <p>
+    <main></main>
+    <footer class="footer-comtacto">
+      <p class="mb-0">
         © 2025 | Todos los derechos reservados | Sitio Web Desarrollado por
         @lucho_cardo
       </p>

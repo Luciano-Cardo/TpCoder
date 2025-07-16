@@ -15,6 +15,29 @@
     .btn-header{
         width: 30rem;
     }
+    .div-prueba{
+        max-width: 50%;
+    }
+    .div-contacto {
+        flex-direction: column;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .div-informacion {
+        margin-top: 4rem;
+        margin-left: 2rem;
+    }
+    .texto-superior {
+        font-size: 2rem;
+    }
+    .contact-wrapper {
+    flex-direction: row;
+  }
+  .info-tienda,
+  .formulario-contacto {
+    width: 50%;
+  }
 }
 
 /*TABLET*/

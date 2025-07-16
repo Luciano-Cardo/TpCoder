@@ -1,13 +1,18 @@
 /* Estilos Mains */
 
+
+/*SUCURSALES*/
 .sucursales-main-container{
     @extend %flexColumn;
+    width: 50%;
 }
 
 .iframeMapa{
     width: 90%;
 }
 
+
+/*PRODUCTOS*/
 .ultimos-modelos-titulo{
     text-align: center;
     margin: 1rem 0;
@@ -26,7 +31,6 @@
 }
 
 .card-auto img{
-    width: 100%; /*Hacemos que ocuper el 100% de la card*/
     border: 0.5rem;
 }
 
@@ -35,7 +39,6 @@
 }
 
 .card-auto-btm{
-    width: 100%;
     border: none;
     padding: 8px;
     font-weight: 800;
@@ -54,8 +57,4 @@
     justify-content: center;
 }
 
-.carousel-foto{
-    width: 100%;
-    height: 40rem;
-    object-fit: cover;
-}
+
