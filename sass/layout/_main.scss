@@ -1,60 +1,42 @@
 /* Estilos Mains */
 
 
-/*SUCURSALES*/
-.sucursales-main-container{
-    @extend %flexColumn;
-    width: 50%;
-}
 
-.iframeMapa{
-    width: 90%;
-}
+/*SUCURSALES*/
+
 
 
 /*PRODUCTOS*/
 .ultimos-modelos-titulo{
     text-align: center;
-    margin: 1rem 0;
+    margin: $size 0;
 }
-
 .card-auto{
     width: 25rem; 
-    background-color: rgba(0, 0, 0, 0.24);
+    background-color: rgba(0, 0, 0, 0.082);
     transition: transform 0.5s;
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+    @extend %btnCard;
 }
-
 .card-auto:hover{
     transform: scale(1.02);
 }
-
 .card-auto img{
     border: 0.5rem;
 }
-
 .card-auto h3, .card-auto p{
-    margin-left: 1rem;
+    margin-left: $size;
 }
-
 .card-auto-btm{
     border: none;
     padding: 8px;
     font-weight: 800;
     margin-top: 0.5rem;
-    text-transform: uppercase; /*Pone las letras en mayuscula*/
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+    text-transform: uppercase; 
+    @extend %btnCard;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.486)
+    background-color: rgba(0, 0, 0, 0.26)
 }
-
 .ultimos-modelos-container{
-    display: flex;
-    flex-wrap: wrap; /*Lo adapta segun el ancho de la pantalla*/
-    gap: 1rem;
-    justify-content: center;
+    @extend %flexWrap;
+    gap: $size;
 }
-
-

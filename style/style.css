@@ -1,5 +1,5 @@
 /*Extends*/
-ul, .sucursales-main-container, .index-header-flex, .contacto-header-flex {
+ul, .index-header-flex, .contacto-header-flex {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,6 +11,56 @@ ul, .sucursales-main-container, .index-header-flex, .contacto-header-flex {
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
+}
+
+.footer-nosotros, .footer-comtacto {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 1rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.input-novedades, .input {
+  padding: 3px;
+  border: 2px solid transparent;
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.527);
+  transition: border 0.3s ease-in-out;
+}
+
+.formulario-contacto, .info-tienda {
+  padding: 2rem;
+  border-radius: 8px;
+  flex: 1;
+  margin-top: 5rem;
+}
+
+.novedades, .contacto-header, .nosotros-header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.formulario-contacto form, .contact-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-novedades, .novedades {
+  z-index: 1;
+  position: relative;
+}
+
+.ultimos-modelos-container, .contenedor-nosotros, .contenedor-nosotros2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-auto-btm, .card-auto {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 
 /* Variables */
@@ -25,7 +75,7 @@ ul, .sucursales-main-container, .index-header-flex, .contacto-header-flex {
   text-decoration: none; /*Le saca el subrayado al a*/
 }
 
-.index-parrafo-header, .index-h1, .contacto-parrafo-header, .contacto-h1 {
+.index-parrafo-header, .index-h1, .contacto-parrafo-header, .contacto-h1, .productos-h1, .productos-parrafo-header {
   color: rgb(255, 255, 255);
 }
 
@@ -40,15 +90,15 @@ ul, .sucursales-main-container, .index-header-flex, .contacto-header-flex {
   max-width: 30rem;
   color: #4d4d4d;
   padding: 15px 40px;
-  background-color: #e0e0e0;
+  background-color: rgb(206, 206, 206);
   font-family: monospace;
   border-radius: 50px;
   border: 2px solid rgb(206, 206, 206);
-  box-shadow: inset 4px 4px 10px #bcbcbc, inset -4px -4px 10px #ffffff;
+  box-shadow: inset 4px 4px 10px #bcbcbc, inset -4px -4px 10px rgb(255, 255, 255);
 }
 
 .btn-header:hover {
-  box-shadow: inset 2px 2px 10px #bcbcbc, inset -2px -2px 10px #ffffff, inset 2px 2px 10px #bcbcbc, inset -2px -2px 10px #ffffff;
+  box-shadow: inset 2px 2px 10px #bcbcbc, inset -2px -2px 10px rgb(255, 255, 255), inset 2px 2px 10px #bcbcbc, inset -2px -2px 10px rgb(255, 255, 255);
 }
 
 .btn-header a {
@@ -58,14 +108,11 @@ ul, .sucursales-main-container, .index-header-flex, .contacto-header-flex {
 
 /*NOSOTROS*/
 .nosotros-header {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   height: 100vh;
 }
 
 .nosotros-header {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   height: 50vh;
 }
 
@@ -73,18 +120,14 @@ ul, .sucursales-main-container, .index-header-flex, .contacto-header-flex {
   padding: 4rem 2rem;
 }
 
-.contenedor-nosotros {
-  display: flex;
-  flex-wrap: wrap;
+.contenedor-nosotros, .contenedor-nosotros2 {
   align-items: center;
-  justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
   gap: 2rem;
 }
 
-.imagen-nosotros img {
-  width: 100%;
+.imagen-nosotros img, .imagen-nosotros2 img {
   max-width: 500px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -92,11 +135,11 @@ ul, .sucursales-main-container, .index-header-flex, .contacto-header-flex {
   margin-top: 5rem;
 }
 
-.texto-nosotros {
+.texto-nosotros, .texto-nosotros2 {
   max-width: 600px;
 }
 
-.texto-nosotros h5 {
+.texto-nosotros h5, .texto-nosotros2 h5 {
   color: #666;
   font-size: 0.9rem;
   letter-spacing: 1px;
@@ -104,54 +147,39 @@ ul, .sucursales-main-container, .index-header-flex, .contacto-header-flex {
   margin-bottom: 0.5rem;
 }
 
-.texto-nosotros h2 {
+.texto-nosotros h2, .texto-nosotros2 h2 {
   font-size: 2rem;
   color: #0056a6;
   margin-bottom: 1rem;
 }
 
-.texto-nosotros p {
+.texto-nosotros p, .texto-nosotros2 p {
   font-size: 1rem;
   line-height: 1.6;
   color: #333;
   margin-bottom: 1rem;
 }
 
-.nosotros-header {
-  height: 100%;
+.linea {
+  margin: auto;
+  width: 60%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /*CONTACTO*/
 .contacto-header {
-  background-color: rgba(0, 0, 0, 0.801);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   height: 100vh;
 }
 
 .contact-wrapper {
-  display: flex;
-  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.089);
   gap: 2rem;
   padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.685);
-}
-
-.info-tienda {
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 2rem;
-  border-radius: 8px;
-  flex: 1;
-  margin-top: 5rem;
 }
 
 .formulario-contacto {
   background-color: rgb(255, 255, 255);
-  padding: 2rem;
-  border-radius: 8px;
-  flex: 1;
-  margin-top: 5rem;
 }
 
 .info-item {
@@ -163,20 +191,17 @@ ul, .sucursales-main-container, .index-header-flex, .contacto-header-flex {
 
 .info-item i {
   font-size: 1.5rem;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   min-width: 24px;
 }
 
 .formulario-contacto form {
-  display: flex;
-  flex-direction: column;
   gap: 1rem;
 }
 
 .formulario-contacto input,
 .formulario-contacto select,
 .formulario-contacto textarea {
-  width: 100%;
   padding: 0.5rem;
   border-radius: 0.25rem;
   border: 1px solid #aaa;
@@ -185,7 +210,7 @@ ul, .sucursales-main-container, .index-header-flex, .contacto-header-flex {
 .formulario-contacto button {
   align-self: flex-end;
   background-color: #14bde0;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 0.6rem 1.5rem;
   border: none;
   border-radius: 0.25rem;
@@ -194,24 +219,18 @@ ul, .sucursales-main-container, .index-header-flex, .contacto-header-flex {
 }
 
 .novedades {
-  background-image: url(../../img/fondocontacto2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url("../img/fondocontacto2.jpg");
   color: rgb(0, 0, 0);
-  padding: 1rem 2rem 55px 2rem;
+  padding: 5rem 2rem 55px 2rem;
   text-align: center;
-  z-index: 1;
-  position: relative;
+  height: 22rem;
 }
 
 .form-novedades {
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
   flex-wrap: wrap;
-  position: relative;
-  z-index: 1;
+  gap: 0.5rem;
 }
 
 .form-novedades input {
@@ -224,8 +243,8 @@ ul, .sucursales-main-container, .index-header-flex, .contacto-header-flex {
 .form-novedades button {
   border-radius: 50%;
   border: none;
-  background: white;
-  color: black;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-weight: bold;
   cursor: pointer;
   width: 42px;
@@ -235,28 +254,21 @@ ul, .sucursales-main-container, .index-header-flex, .contacto-header-flex {
 
 .input {
   all: unset;
-  padding: 3px;
-  border: 2px solid transparent;
-  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.527);
-  transition: border 0.3s ease-in-out;
-}
-
-input:focus {
-  border: violet;
 }
 
 input::placeholder {
   font-size: 0.9rem;
 }
 
-.input-novedades {
-  padding: 3px;
-  border: 2px solid transparent;
-  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.527);
-  transition: border 0.3s ease-in-out;
+/*SUCURSALES*/
+.sucursales-header {
+  height: 50vh;
 }
 
-/*SUCURSALES*/
+.sucursales-main {
+  background-color: rgba(0, 0, 0, 0.185);
+}
+
 /*PRODUCTOS*/
 .productos-header {
   height: 50vh;
@@ -266,16 +278,26 @@ input::placeholder {
   max-width: 40rem;
 }
 
+.texto-hover {
+  transition: transform 0.3s ease;
+}
+.texto-hover:hover {
+  transform: scale(1.2);
+}
+
+.logotipo {
+  transition: transform 0.3s ease;
+}
+.logotipo:hover {
+  transform: scale(1.2);
+}
+
+.texto-hover {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
 /* Estilos Mains */
 /*SUCURSALES*/
-.sucursales-main-container {
-  width: 50%;
-}
-
-.iframeMapa {
-  width: 90%;
-}
-
 /*PRODUCTOS*/
 .ultimos-modelos-titulo {
   text-align: center;
@@ -284,10 +306,8 @@ input::placeholder {
 
 .card-auto {
   width: 25rem;
-  background-color: rgba(0, 0, 0, 0.24);
+  background-color: rgba(0, 0, 0, 0.082);
   transition: transform 0.5s;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
 }
 
 .card-auto:hover {
@@ -307,56 +327,24 @@ input::placeholder {
   padding: 8px;
   font-weight: 800;
   margin-top: 0.5rem;
-  text-transform: uppercase; /*Pone las letras en mayuscula*/
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+  text-transform: uppercase;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.486);
+  background-color: rgba(0, 0, 0, 0.26);
 }
 
 .ultimos-modelos-container {
-  display: flex;
-  flex-wrap: wrap; /*Lo adapta segun el ancho de la pantalla*/
   gap: 1rem;
-  justify-content: center;
 }
 
 /*Estilos footer*/
 /*CONTACTO*/
 .footer-comtacto {
-  background-color: rgba(0, 0, 0, 0.05);
-  color: black;
-  text-align: center;
-  padding: 1rem 2rem;
-  font-size: 0.9rem;
-  position: relative;
-  z-index: 0;
   margin-top: 2rem;
-}
-
-.footer-comtacto p {
-  margin: 0;
-}
-
-.footer-comtacto a {
-  color: #007bff;
-  text-decoration: none;
 }
 
 /*NOSOTROS*/
 .footer-nosotros {
-  background-color: rgba(0, 0, 0, 0.05);
-  text-align: center;
-  padding: 1rem 2rem;
-  font-size: 0.9rem;
-  color: #000;
-  position: relative;
-  z-index: 1;
-  margin-top: 2rem;
-}
-
-.footer-nosotros p {
-  margin: 0;
+  margin-top: 14rem;
 }
 
 /*Estilos Media Query*/
@@ -417,13 +405,6 @@ input::placeholder {
 ul {
   list-style: none; /*Le saca las pelotitas a la lista*/
   gap: 1rem;
-}
-
-.oscurecer-fondo {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.651);
 }
 
 /*# sourceMappingURL=style.css.map */

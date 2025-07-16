@@ -17,18 +17,12 @@
     width: 5rem; /*Usamos rem para que se escale correctamente (un tema de mantener las proporciones consistentes, 1rem=16px)*/
     height: 5rem;
 }
+
 ul{
+    @extend %flexColumn;
     list-style: none; /*Le saca las pelotitas a la lista*/
     gap: 1rem;
-    @extend %flexColumn;
 }
-
-.oscurecer-fondo{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.651); 
-} 
 
 
 

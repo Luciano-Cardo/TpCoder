@@ -3,37 +3,14 @@
 
 /*CONTACTO*/
 .footer-comtacto {
-  background-color: rgba(0, 0, 0, 0.05); 
-  color: black;
-  text-align: center;
-  padding: 1rem 2rem;
-  font-size: 0.9rem;
-  position: relative; 
-  z-index: 0;
+  @extend %footerEspecifico;
   margin-top: 2rem;
 }
 
-.footer-comtacto p {
-  margin: 0; 
-}
-
-.footer-comtacto a {
-  color: #007bff;
-  text-decoration: none;
-}
 
 /*NOSOTROS*/
 .footer-nosotros {
-  background-color: rgba(0, 0, 0, 0.05);
-  text-align: center;
-  padding: 1rem 2rem;
-  font-size: 0.9rem;
-  color: #000;
-  position: relative; 
-  z-index: 1;          
-  margin-top: 2rem;
+  @extend %footerEspecifico;         
+  margin-top: 14rem;
 }
 
-.footer-nosotros p{
-    margin:0;
-}
