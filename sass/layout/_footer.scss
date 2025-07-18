@@ -1,14 +1,10 @@
 /*Estilos footer*/
 
 
-/*CONTACTO*/
+/*CONTACTO AND FOOTER*/
+.footer-nosotros,
 .footer-contacto {
   @extend %footerEspecifico;
 }
 
-
-/*NOSOTROS*/
-.footer-nosotros {
-  @extend %footerEspecifico;         
-}
 
