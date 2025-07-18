@@ -13,7 +13,7 @@ ul, .index-header-flex, .contacto-header-flex {
   height: 100vh;
 }
 
-.footer-nosotros, .footer-comtacto {
+.footer-nosotros, .footer-contacto {
   background-color: rgba(0, 0, 0, 0.05);
   color: rgb(0, 0, 0);
   text-align: center;
@@ -168,10 +168,6 @@ ul, .index-header-flex, .contacto-header-flex {
 }
 
 /*CONTACTO*/
-.contacto-header {
-  height: 100vh;
-}
-
 .contact-wrapper {
   background-color: rgba(0, 0, 0, 0.089);
   gap: 2rem;
@@ -252,12 +248,12 @@ ul, .index-header-flex, .contacto-header-flex {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 
-.input {
-  all: unset;
-}
-
 input::placeholder {
   font-size: 0.9rem;
+}
+
+.icono {
+  font-family: "Font Awesome 6 Free" !important;
 }
 
 /*SUCURSALES*/
@@ -276,24 +272,6 @@ input::placeholder {
 
 .productos-header-container {
   max-width: 40rem;
-}
-
-.texto-hover {
-  transition: transform 0.3s ease;
-}
-.texto-hover:hover {
-  transform: scale(1.2);
-}
-
-.logotipo {
-  transition: transform 0.3s ease;
-}
-.logotipo:hover {
-  transform: scale(1.2);
-}
-
-.texto-hover {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
 /* Estilos Mains */
@@ -338,15 +316,7 @@ input::placeholder {
 
 /*Estilos footer*/
 /*CONTACTO*/
-.footer-comtacto {
-  margin-top: 2rem;
-}
-
 /*NOSOTROS*/
-.footer-nosotros {
-  margin-top: 14rem;
-}
-
 /*Estilos Media Query*/
 /*LARGER SCREEN*/
 @media only screen and (min-width: 900px) {
@@ -405,6 +375,24 @@ input::placeholder {
 ul {
   list-style: none; /*Le saca las pelotitas a la lista*/
   gap: 1rem;
+}
+
+.texto-hover {
+  transition: transform 0.3s ease;
+}
+.texto-hover:hover {
+  transform: scale(1.2);
+}
+
+.logotipo {
+  transition: transform 0.3s ease;
+}
+.logotipo:hover {
+  transform: scale(1.2);
+}
+
+.texto-hover {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
 /*# sourceMappingURL=style.css.map */

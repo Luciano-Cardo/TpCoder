@@ -25,6 +25,24 @@ ul{
 }
 
 
+.texto-hover {
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.logotipo {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.texto-hover{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
 
 
 
